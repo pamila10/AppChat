@@ -1,0 +1,307 @@
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &___fluid {
+    max-width: 100%;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+}
+
+.h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.h3 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+.text {
+  &_sm {
+    font-size: 0.9rem;
+  }
+
+  &___bold {
+    font-weight: bold;
+  }
+}
+
+.wrap {
+  display: flex;
+}
+
+.form {
+  &_fieldBl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  &_label {
+    margin-bottom: 5px;
+  }
+
+  &_fieldWrap {
+    width: 100%;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      right: 5px;
+      top: 0;
+      bottom: 0;
+      background-color: transparent;
+      border: 0;
+
+      svg {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &_field {
+    width: 100%;
+    border-color: transparent;
+    height: 35px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #3e3e3e;
+  }
+
+  &_btn {
+    margin-top: 10px;
+  }
+}
+
+.bl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  &_bl {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+  }
+
+  &_img {
+    border-radius: 50%;
+  }
+
+  &_uploadBl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+
+  &_uploadImg {
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+.profileInfo {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin: 15px 0;
+
+  &_bl {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &_field {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+  }
+}
+
+.accountInfo {
+  padding: 20px 0 10px;
+
+  &_bl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &_item {
+    display: flex;
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &_data {
+    text-align: start;
+    margin-left: 10px;
+  }
+}
+
+.status {
+  text-align: start;
+  margin: 10px 0;
+
+  &_label {
+    span {
+      padding-left: 5px;
+    }
+  }
+}
+
+.header {
+  margin: 10px 0;
+}
+
+.aside {
+  overflow: auto;
+  height: calc(100vh - 56px);
+  max-width: 250px;
+  min-width: 200px;
+  width: 100%;
+  border-right: 1px solid gray;
+  margin-right: 10px;
+}
+
+.noChat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.chatInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  &_user {
+    display: flex;
+    gap: 10px;
+  }
+
+  &_userImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &_userText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+    p {
+      margin: 2px 0;
+    }
+  }
+
+  &_close {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.chatWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chat {
+  &_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.msg {
+  display: flex;
+
+  &___start {
+    align-items: flex-start;
+    text-align: start;
+    margin-right: 20%;
+  }
+
+  &___end {
+    flex-direction: row-reverse;
+    text-align: end;
+    margin-left: 20%;
+  }
+
+  &_text {
+    margin: 0 10px;
+  }
+
+  time {
+    font-size: 0.8rem;
+  }
+}
